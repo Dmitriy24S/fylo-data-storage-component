@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700");
+body {
+  background-image: url("./images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: hsl(243, 100%, 93%);
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+  min-width: 320px;
+}
+/* main */
+/* head */
+.head-component {
+  background: hsl(228, 56%, 26%);
+  border-top-right-radius: 115px;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: hsl(229, 57%, 11%);
+  padding: 1rem;
+  border-radius: 13px;
+}
+.img-container:hover {
+  filter: brightness(125%);
+  cursor: pointer;
+}
+/* info */
+.info-component {
+  background: hsl(228, 56%, 26%);
+  position: relative;
+}
+.storage-size {
+  font-weight: 700;
+}
+.info-component__top span {
+  font-weight: 700;
+}
+/* progress bar  */
+.progress-bar-wrapper {
+  position: relative;
+  background: hsl(229, 57%, 11%);
+  padding: 0.25rem 0.2rem;
+  border-radius: 25px;
+}
+.progress-bar {
+  position: relative;
+  border-radius: 25px;
+  width: 70%;
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 15px;
+}
+.progress-bar__circle {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  right: 5px;
+  top: calc(-50% / 2 + 0.35rem);
+}
+/* storage left bubble */
+.storage-left-amount {
+  position: absolute;
+  border-radius: 8px;
+  padding: 0.2rem 0.5rem;
+  top: 82%;
+  left: 25%;
+  right: 25%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.storage-left-amount {
+  color: hsl(229, 7%, 55%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.storage-left-amount span {
+  color: black;
+  font-size: 2rem;
+}
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+  color: hsl(228, 45%, 54%);
+}

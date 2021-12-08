@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fylo data storage component</title>
+    <style></style>
+  </head>
+  <body class="p-5 min-h-screen md:flex md:flex-col md:justify-center">
+    <main
+      class="flex flex-col gap-5 mt-16 md:flex-row md:justify-center md:items-end md:gap-8 md:mt-0"
+    >
+      <div class="head-component px-12 py-10 pt-14 rounded-2xl flex flex-col gap-8 items-start">
+        <img src="./images/logo.svg" alt="logo" class="logo cursor-pointer" />
+        <div class="shortcuts flex flex-row gap-3">
+          <div class="img-container">
+            <img src="./images/icon-document.svg" alt="document icon" />
+          </div>
+          <div class="img-container">
+            <img src="./images/icon-folder.svg" alt="folder icon" />
+          </div>
+          <div class="img-container">
+            <img src="./images/icon-upload.svg" alt="upload icon" />
+          </div>
+        </div>
+      </div>
+      <div class="info-component px-12 py-10 rounded-2xl flex flex-col gap-3 text-center">
+        <div class="info-component__top">
+          <p>You’ve used <span>815 GB</span> of your storage</p>
+        </div>
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar">
+            <div class="progress-bar__circle"></div>
+          </div>
+        </div>
+        <div class="storage-size flex justify-between">
+          <div class="storage-size__min">0 GB</div>
+          <div class="storage-size__max">1000 GB</div>
+        </div>
+        <div class="storage-left-amount bg-white"><span>185</span> GB Left</div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution mt-16">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dmitriy</a>
+      </div>
+    </footer>
+  </body>
+</html>
