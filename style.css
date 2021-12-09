@@ -95,3 +95,38 @@ body {
 .attribution a:hover {
   color: hsl(228, 45%, 54%);
 }
+/* desktop */
+@media (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-desktop.png");
+    background-position: bottom;
+    background-size: contain;
+    background-color: hsl(229, 57%, 11%);
+    background-size: 100% 55%;
+  }
+  /* left card - head */
+  .head-component {
+    width: 40%;
+    max-width: 350px;
+  }
+  /* right card - info */
+  .info-component {
+    width: 50%;
+    max-width: 800px;
+  }
+  /* storage left bubble */
+  .storage-left-amount {
+    top: -20%;
+    right: 5%;
+    left: auto;
+    padding: 0.2rem 0.5rem;
+  }
+  .storage-left-amount:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    right: 0;
+    border-left: 28px solid transparent;
+    border-top: 23px solid white;
+  }
+}
